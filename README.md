@@ -38,7 +38,25 @@ It implements three levels of language modeling on Shakespeare’s works:
 **Perplexity Comparison Plot**  
 ![PPL plot](outputs/perplexity_compare.png)
 
+
+
 ---
+💡 Discussion & Conclusion
+
+Our experiments highlight the progression from classical statistical models to modern neural architectures:
+
+BPE Tokenizer reduced the vocabulary size to 519 subword tokens, making rare words decomposable into smaller units and easing the learning problem.
+
+N-gram baseline achieved validation/test perplexities around 126–127. This shows that while N-grams capture local co-occurrence statistics, they struggle with longer contexts and suffer from data sparsity.
+
+GPT model significantly improved perplexity to ~83 on both validation and test. This demonstrates the advantage of self-attention and learned embeddings in modeling longer dependencies and richer context compared to fixed N-grams.
+
+Loss curves show stable convergence within 6 epochs, with validation loss flattening but not diverging, indicating little overfitting.
+
+Qualitative generations produce fluent Shakespeare-style fragments, though still with repetition and invented words at this small scale. This reflects both the limited model size and training time, and also shows that larger GPTs achieve much better fluency.
+
+Conclusion:
+Even with a small decoder-only Transformer trained from scratch on Shakespeare, we achieve a clear improvement over traditional N-gram models. This validates the seminar’s core lesson: subword tokenization + attention-based neural models provide much stronger language modeling ability than classical statistical methods. Further gains would be expected with larger BPE vocabularies, deeper models, longer training, and GPU acceleration.
 
 ## 📝 Sample Generation
 
