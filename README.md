@@ -58,3 +58,33 @@ Even with a small decoder-only Transformer trained from scratch on Shakespeare, 
 
 Seed: `"love"`
 
+love and life to your polones of your confrain my botters caping of word of the life
+that the stonius case me of our ressing tins of a does and purderly in your mp to be
+the world of the light and the spion my lord and the sufol
+
+
+(see more in `outputs/sample_generation.txt`)
+
+---
+
+## 🚀 How to Run
+
+### Requirements
+```bash
+pip install -r requirements.txt
+
+
+Run Training & Evaluation
+python main.py
+
+📂 Project Structure
+gpt_from_scratch/
+├── main.py               # end-to-end training & evaluation
+├── models/
+│   └── transformer.py    # GPT model implementation
+├── utils/
+│   ├── bpe.py            # BPE tokenizer
+│   ├── ngram.py          # N-gram model
+│   └── data.py           # dataset helpers
+├── corpora/              # Shakespeare clean train/val/test
+└── outputs/              # plots, checkpoints, generations, summary
