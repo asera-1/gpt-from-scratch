@@ -91,16 +91,3 @@ gpt_from_scratch/
 └── outputs/              # plots, checkpoints, generations, summary
 
 
-
----
-
-✅ This README hits all the professor’s checkboxes:  
-- explains methods,  
-- shows plots,  
-- includes numbers (perplexities),  
-- gives qualitative sample,  
-- tells how to run.  
-
----
-
-Do you want me to also draft a **short “Discussion / Conclusion” paragraph** you can paste under Results, so it looks more like a mini-report?
