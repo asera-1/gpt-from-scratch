@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Outputs (keep plots + text + summary)
+outputs/*
+!outputs/*.png
+!outputs/*.txt
+!outputs/*.json
+
+# Large checkpoints (skip by default)
+*.pt
+*.bin
+*.ckpt
