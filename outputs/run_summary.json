@@ -1,0 +1,29 @@
+{
+  "vocab_size": 519,
+  "num_merges": 500,
+  "ngram": {
+    "n": 3,
+    "k": 1.0,
+    "lambdas": [
+      0.1,
+      0.3,
+      0.6,
+      0.0
+    ],
+    "val_ppl": 126.10859422369366,
+    "test_ppl": 127.25130457019888
+  },
+  "gpt": {
+    "val_ppl": 82.94149193113233,
+    "test_ppl": 83.10352308503022
+  },
+  "train": {
+    "epochs": 6,
+    "steps_per_epoch": 60,
+    "val_steps": 60,
+    "batch_size": 64,
+    "block_size": 128,
+    "lr": 0.0003
+  },
+  "device": "cpu"
+}
